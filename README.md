@@ -17,6 +17,8 @@ function isSongKey(evt){
     return keysAccepted.includes(charCode) ? true : false;
 }
 ~~~
+~~~html
+<input type="text" id="input" placeholder="Faça uma composição..." onkeydown="return isSongKey(event)"/>
+~~~
 Sem essa função, o campo input recebia qualquer valor digitado, causando um atrasso no som emitido.
-
 
